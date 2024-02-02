@@ -1,3 +1,5 @@
+import Container from "@/components/container";
+import { Card, CardHeader } from "@/components/ui/card";
 import {
 	Award,
 	FileText,
@@ -6,7 +8,6 @@ import {
 	WifiOff,
 	Zap,
 } from "lucide-react";
-import Container from "./container";
 
 const FEATURES_LIST = [
 	{
@@ -68,13 +69,17 @@ type FeatureProps = {
 
 const Feature = ({ icon, title, description }: FeatureProps) => {
 	return (
-		<div className="px-4 py-4 rounded-lg border flex">
-			<div className="px-2">{icon}</div>
-			<div className="flex-1">
-				<h2 className="text-xl font-semibold">{title}</h2>
-				<p className="text-sm text-muted-foreground">{description}</p>
-			</div>
-		</div>
+		<Card>
+			<CardHeader>
+				<div className="flex gap-2">
+					<div className="px-2">{icon}</div>
+					<div className="flex-1">
+						<h2 className="text-xl font-semibold">{title}</h2>
+						<p className="text-sm text-muted-foreground">{description}</p>
+					</div>
+				</div>
+			</CardHeader>
+		</Card>
 	);
 };
 
