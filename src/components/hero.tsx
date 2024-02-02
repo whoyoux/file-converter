@@ -11,9 +11,11 @@ const Hero = () => {
 				Convert documents, images, audio, and video files securely on your
 				device, anytime, anywhere - even offline
 			</h2>
-			<Button size="lg" className="mt-10">
-				Convert Now
-			</Button>
+			<Link href="/convert">
+				<Button size="lg" className="mt-10">
+					Convert Now
+				</Button>
+			</Link>
 			<Link href="#supported_formats">
 				<Button variant="link">See Supported Formats</Button>
 			</Link>
