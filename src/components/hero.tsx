@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Hero = () => {
 	return (
@@ -13,7 +14,9 @@ const Hero = () => {
 			<Button size="lg" className="mt-10">
 				Convert Now
 			</Button>
-			<Button variant="link">See Supported Formats</Button>
+			<Link href="#supported_formats">
+				<Button variant="link">See Supported Formats</Button>
+			</Link>
 		</section>
 	);
 };

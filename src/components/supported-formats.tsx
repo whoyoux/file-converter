@@ -31,8 +31,10 @@ const SUPPORTED_FORMATS = [
 
 const SupportedFormats = () => {
 	return (
-		<Container className="flex flex-col items-center gap-10 ">
-			<h2 className="text-3xl font-semibold">Supported formats</h2>
+		<Container className="flex flex-col items-center gap-10">
+			<h2 className="text-3xl font-semibold" id="supported_formats">
+				Supported formats
+			</h2>
 			<p>Currently, we support the following formats:</p>
 			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 				{SUPPORTED_FORMATS.map((format) => (
