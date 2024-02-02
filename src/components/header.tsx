@@ -7,7 +7,7 @@ const Header = () => {
 			<h1 className="py-4 md:py-6 text-2xl font-semibold">File converter</h1>
 			<div className="flex items-center gap-2 md:gap-6">
 				<Link
-					href="https://github.com/"
+					href="https://github.com/whoyoux/file-converter"
 					target="_blank"
 					referrerPolicy="no-referrer"
 				>
