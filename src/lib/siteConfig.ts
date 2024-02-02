@@ -21,7 +21,7 @@ export const siteConfig = {
 	url:
 		process.env.NODE_ENV === "development"
 			? "http://localhost:3000"
-			: "https://company-whx.vercel.app",
+			: "https://file-converter-whx.vercel.app",
 	ogImage: "",
 	authors: [
 		{
