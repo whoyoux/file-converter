@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ThemeDropdown } from "./theme-dropdown";
 
@@ -11,7 +12,7 @@ const Header = () => {
 					target="_blank"
 					referrerPolicy="no-referrer"
 				>
-					source code
+					<Button variant="link">source code</Button>
 				</Link>
 				<ThemeDropdown />
 			</div>

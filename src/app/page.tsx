@@ -1,7 +1,13 @@
+import Features from "@/components/features";
+import Hero from "@/components/hero";
+import UsedBy from "@/components/used-by";
+
 export default function Home() {
 	return (
 		<main>
-			<h1>File converter</h1>
+			<Hero />
+			<Features />
+			<UsedBy />
 		</main>
 	);
 }

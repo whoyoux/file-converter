@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/lib/siteConfig";
@@ -48,6 +49,7 @@ export default function RootLayout({
 				>
 					<Header />
 					{children}
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
