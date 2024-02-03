@@ -8,6 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/lib/siteConfig";
 import { cn } from "@/lib/utils";
 
+import { Toaster } from "@/components/ui/sonner";
+
 const fontSans = FontSans({
 	subsets: ["latin"],
 	variable: "--font-sans",
@@ -50,6 +52,7 @@ export default function RootLayout({
 					<Header />
 					{children}
 					<Footer />
+					<Toaster richColors />
 				</ThemeProvider>
 			</body>
 		</html>
