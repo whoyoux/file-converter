@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
 import Link from "next/link";
 import { ThemeDropdown } from "./theme-dropdown";
 
@@ -14,15 +13,6 @@ const Header = () => {
 					<Button>Convert now</Button>
 				</Link>
 				<ThemeDropdown />
-				<Link
-					href="https://github.com/whoyoux/file-converter"
-					target="_blank"
-					referrerPolicy="no-referrer"
-				>
-					<Button variant="outline" size="icon">
-						<Github className="h-[1.2rem] w-[1.2rem]" />
-					</Button>
-				</Link>
 			</div>
 		</header>
 	);

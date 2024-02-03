@@ -29,6 +29,13 @@ const Footer = () => {
 						Copyright Information
 					</Button>
 				</Link>
+				<Link
+					href="https://github.com/whoyoux/file-converter"
+					target="_blank"
+					referrerPolicy="no-referrer"
+				>
+					<Button variant="link">Source Code</Button>
+				</Link>
 			</div>
 		</footer>
 	);
