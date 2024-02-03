@@ -29,13 +29,24 @@ export const Dropzone = () => {
 		},
 		[files, addFile],
 	);
-
 	const { getRootProps, getInputProps, isDragActive, isDragReject } =
 		useDropzone({
 			accept: {
-				"image/jpeg": [],
-				"image/png": [],
-				"video/mp4": [],
+				"image/*": [
+					".jpg",
+					".jpeg",
+					".png",
+					".gif",
+					".bmp",
+					".webp",
+					".ico",
+					".tif",
+					".tiff",
+					".raw",
+					".tga",
+				],
+				"audio/*": [],
+				"video/*": [],
 			},
 			onDrop,
 		});

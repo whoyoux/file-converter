@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type FileToConvert = {
+export type FileToConvert = {
 	file: File;
 	convertTo: string;
 	startedConverting: boolean;
