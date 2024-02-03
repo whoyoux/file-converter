@@ -35,7 +35,6 @@ const SupportedFormats = () => {
 			<h2 className="text-3xl font-semibold" id="supported_formats">
 				Supported formats
 			</h2>
-			<p>Currently, we support the following formats:</p>
 			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
 				{SUPPORTED_FORMATS.map((format) => (
 					<Format key={`format-${format.label}`} {...format} />
