@@ -72,7 +72,7 @@ export const Dropzone = () => {
 				<div className="flex flex-col items-center justify-center gap-2">
 					<FileUp size={48} />
 					<p className="font-medium">
-						Drag 'n' drop some files here, or click to select files
+						Drag &apos;n&apos; drop some files here, or click to select files
 					</p>
 				</div>
 			)}
